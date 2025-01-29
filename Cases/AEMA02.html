@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Monitor</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="../images/AE-logo.svg" alt="Anglo Eastern Logo" class="logo">
+        <h1>Case Study 002</h1>
+    </header>
+    <div class="condition-container">
+        <p id="systemCondition">Tie Breaker Not Closing</p>
+    </div>
+    <main class="content">
+        <!-- First Section -->
+        <section class="case-intro">
+            <h2>System Condition</h2>
+            <p class="description">- After trying out Emergency Generator on load test, the ESBD tie breaker fails to close. Similar problems reported by multiple ships.</p>
+        </section>
+
+        <!-- Middle Sections -->
+        <section class="case-details">
+            <h2>Tie Breaker not closing after testing</h2>
+            <ul class="description">
+                <li>As per the PMS, the Emergency generator on load test (Gen + ACB) was carried out.</li>
+                <li>ESBD was de-energized by opening the ESBD Tie-Breaker ACB using the RTS.</li>
+                <li>The Generator started and came on load as per the regulations, and everything was satisfactory.</li>
+                <li>When RTS turned to Normal, the Emergency  Generator got off-loaded. The ESBD Tie breaker failed to close.</li>
+                <li>- The system tried multiple closing attempts but failed to close the Tie Breaker.</li>
+            </ul>
+        </section>
+
+        <section class="case-details">
+            <h2>Solution Summary</h2>
+            <ul class="description">
+                <li>The ship carried out the maintenance of the Tie-breaker ACB. The problem still persisted.</li>
+                <li>Shore assistance was sought out, and electrical circuits were referred to.</li>
+                <li>A step-by-step examination of components was done by the ship to ensure proper functioning.</li>
+                <li>Multiple timers are associated with the Tie-breaker closing sequence. The timer M84t was not functioning properly. The contact changeover was not happening in the timer as intended.</li>
+                <li>The timer was changed, and the problem was solved.</li>
+            </ul>
+            <img src="../images/Timer.jpeg">
+        </section>
+
+        <!-- Last Section -->
+        <section class="solution">
+            <h2>Recommended Solution</h2>
+            <ul>
+                <li>Check all the timers and their changeovers. Similar problems were faced by multiple vessels, and mostly timers are at fault.</li>
+                <li>Ensure timely inspections of the ACBs.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Anglo Eastern Maritime Academy. All rights reserved.</p>
+    </footer>
+
+    <style>
+        
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .case-intro, .solution {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .case-details {
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .case-details img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 15px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* Specific rule for the System Condition section */
+        .case-intro h2 {
+           color: #d9534f; /* Change color to #d9534f for this heading */
+        }
+
+        .solution h2 {
+           color: #4fd976; /* Change color to #d9534f for this heading */
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        .description {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .solution ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003963;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+    </style>
+</body>
+</html>

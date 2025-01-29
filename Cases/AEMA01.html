@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Monitor</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="../images/AE-logo.svg" alt="Anglo Eastern Logo" class="logo">
+        <h1>Case Study 001</h1>
+    </header>
+    <div class="condition-container">
+        <p id="systemCondition">Generator Current Imbalance</p>
+    </div>
+    <main class="content">
+        <!-- First Section -->
+        <section class="case-intro">
+            <h2>System Condition</h2>
+            <p class="description">Generator current imbalance was observed, which led to operational challenges requiring immediate attention.</p>
+        </section>
+
+        <!-- Middle Sections -->
+        <section class="case-details">
+            <h2>Auxiliary Engine 2 Power Factor Issue</h2>
+            <ul class="description">
+                <li>AE2 was observed running with an unusually low power factor (0.1–0.3) during vessel maneuvering, despite similar loads across all three auxiliary engines.</li>
+                <li>The current drawn by AE2 was significantly higher than AE1 and AE3 for comparable loads, indicating inefficiency.</li>
+                <li>The low power factor issue persisted when AE2 was operated in parallel with AE1 and AE3, regardless of configuration.</li>
+                <li>While the vessel's operations were not impacted immediately, the abnormal performance raised concerns about equipment reliability during critical maneuvers.</li>
+            </ul>
+        </section>
+
+        <section class="case-details">
+            <h2>Solution Summary</h2>
+            <ul class="description">
+                <li>A service engineer conducted a thorough investigation and identified that AE2's no-load voltage was set at 462.2 volts, which was higher than the recommended setting.</li>
+                <li>The no-load voltage for all three auxiliary engines was adjusted to 450 volts to ensure uniformity.</li>
+                <li>Post-adjustment, all generators were tested under load conditions from the stern and bow thrusters. The tests confirmed smooth operation, equal load sharing, and improved power factor as the load increased.</li>
+                <li>The service engineer advised rechecking the no-load voltage every two years to prevent similar deviations and ensure continued reliability.</li>
+            </ul>
+        </section>
+
+        <!-- Last Section -->
+        <section class="solution">
+            <h2>Recommended Solution</h2>
+            <ul>
+                <li>Check the no-load voltage of each generator and align it with standard settings.</li>
+                <li>If the no-load voltage is correct, inspect the Automatic Voltage Regulator (AVR) for potential faults and replace if necessary.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Anglo Eastern Maritime Academy. All rights reserved.</p>
+    </footer>
+
+    <style>
+        
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .case-intro, .solution {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .case-details {
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        /* Specific rule for the System Condition section */
+        .case-intro h2 {
+           color: #d9534f; /* Change color to #d9534f for this heading */
+        }
+
+        .solution h2 {
+           color: #4fd976; /* Change color to #d9534f for this heading */
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        .description {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .solution ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003963;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+    </style>
+</body>
+</html>
