@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: "Avenir Next", Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #d4edda;
+    text-align: center;
+}
+
+h1 {
+    color: #F3AD1C;
+}
+.header {
+    background-color: #003963;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.header .logo {
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    bottom: 10px;
+    border-radius: 10%;
+}
+
+.condition-container {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#systemCondition {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #003963; /* Updated background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white; /* Text color inside the form */
+    position: relative;
+    background-image: url('images/AE-logo-small.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 150px 150px; /* Adjust size as needed */
+}
+
+/* Form Layout */
+.form-row {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    gap: 20px; /* Add spacing between form groups */
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align labels and inputs to the left */
+    width: 100%; /* Ensure all fields have equal width */
+    max-width: 250px; /* Restrict the maximum width of each field */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #fff; /* Label text color */
+}
+
+input[type="number"] {
+    width: 100%; /* Ensure input fields take full width of the container */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Emergency Section Styling */
+.emergency {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #00b098;
+}
+
+.emergency .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add spacing between form columns */
+    width: 100%;
+}
+
+.emergency .form-column {
+    flex: 1; /* Allow columns to take equal space */
+    padding: 0 10px;
+}
+
+.emergency .form-column:first-child {
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.emergency .form-column:last-child {
+    margin-left: 10px;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background-color: #00b098;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Avenir Next", Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45c4d6;
+}
+
+#testCase3 {
+    background-color: #d9534f; /* Muted red */
+    color: white; /* Text color for contrast */
+    border: none; /* Clean look */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Spacing */
+    font-size: 16px; /* Readable text size */
+    cursor: pointer; /* Indicates it's clickable */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  #testCase3:hover {
+    background-color: #c9302c; /* Slightly darker red on hover */
+  }
+/* 
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+} */
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column; /* Stack form groups vertically on small screens */
+    }
+
+    input[type="number"] {
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+
+    .emergency .form-row {
+        flex-direction: column; /* Stack emergency form columns vertically */
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/AE-logo.svg" alt="Anglo Eastern Logo" class="logo">
+        <h1>Power Management System</h1>
+    </header>
+    <!-- <h1>Generator Monitoring System</h1> -->
+    <div class="condition-container">
+        <p id="systemCondition">System Condition: Normal</p>
+    </div>
+    <form id="generatorForm">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="totalLoad">Total Load (KW):</label>
+                <input type="number" id="totalLoad" value="1000">
+            </div>
+            <div class="form-group">
+                <label for="voltage">Voltage:</label>
+                <input type="number" id="voltage" value="450">
+            </div>
+            <div class="form-group">
+                <label for="totalCurrent">Total Current:</label>
+                <input type="number" id="totalCurrent" value="1500">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-column">
+                <h3>Generator 1</h3>
+                <div class="form-group">
+                    <label for="generator1Condition">Condition (0/1):</label>
+                    <input type="number" id="generator1Condition" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="generator1KW">KW:</label>
+                    <input type="number" id="generator1KW" value="500">
+                </div>
+                <div class="form-group">
+                    <label for="generator1Current">Current:</label>
+                    <input type="number" id="generator1Current" value="750">
+                </div>
+            </div>
+            <div class="form-column">
+                <h3>Generator 2</h3>
+                <div class="form-group">
+                    <label for="generator2Condition">Condition (0/1):</label>
+                    <input type="number" id="generator2Condition" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="generator2KW">KW:</label>
+                    <input type="number" id="generator2KW" value="500">
+                </div>
+                <div class="form-group">
+                    <label for="generator2Current">Current:</label>
+                    <input type="number" id="generator2Current" value="750">
+                </div>
+            </div>
+            <div class="form-column">
+                <h3>Generator 3</h3>
+                <div class="form-group">
+                    <label for="generator3Condition">Condition (0/1):</label>
+                    <input type="number" id="generator3Condition" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="generator3KW">KW:</label>
+                    <input type="number" id="generator3KW" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="generator3Current">Current:</label>
+                    <input type="number" id="generator3Current" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="emergency">
+            <h3>Emergency Generator</h3>
+            <div class="form-row">
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="esbdBusVoltage">ESBD Bus Voltage:</label>
+                        <input type="number" id="esbdBusVoltage" value="440">
+                    </div>
+                    <div class="form-group">
+                        <label for="tieBreakerACBCondition">Tie Breaker ACB Condition (0/1):</label>
+                        <input type="number" id="tieBreakerACBCondition" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyGeneratorACBCondition">Emergency Gen ACB Condition (0/1):</label>
+                        <input type="number" id="emergencyGeneratorACBCondition" value="0">
+                    </div>
+                </div>
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="emergencyGeneratorCondition">Generator Run(0/1):</label>
+                        <input type="number" id="emergencyGeneratorCondition" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyGeneratorKW">KW:</label>
+                        <input type="number" id="emergencyGeneratorKW" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyGeneratorCurrent">Current:</label>
+                        <input type="number" id="emergencyGeneratorCurrent" value="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Add Test Case Buttons -->
+    <div class="button-container">
+        <button type="button" id="testCase1">Test Case 1</button>
+        <button type="button" id="testCase2">Test Case 2</button>
+        <button type="button" id="testCase3">Acknowledge</button>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
